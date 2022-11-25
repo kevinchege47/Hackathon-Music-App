@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstBuyerDashboard">
+    <RelativeLayout
+        android:id="@+id/waves"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/wave"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tabSellersTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shopping_cart"
+
+            android:elevation="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="Producers"
+            android:background="#000000"/>
+
+    </LinearLayout>
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/productsRl"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginTop="-40dp"-->
+    <!--        android:layout_below="@id/waves"/>-->
+
+    <RelativeLayout
+        android:id="@+id/sellersRl"
+        android:layout_below="@id/waves"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopsRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_shop"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ordersRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/waves"
+        android:visibility="gone"
+        android:layout_marginTop="-60dp">
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+

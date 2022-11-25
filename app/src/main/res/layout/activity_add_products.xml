@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_products"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/wave">
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="-50dp"
+            android:orientation="horizontal">
+
+<!--            <TextView-->
+<!--                android:id="@+id/welcomemessage"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="welcome"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp" />-->
+            <TextView
+                android:id="@+id/welcomename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AddBeat"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_title"
+                android:layout_marginTop="10dp"
+                android:hint="Title"
+                app:boxStrokeColor="@android:color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                app:startIconDrawable="@drawable/title"
+                app:startIconTint="@android:color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/product_description"
+                android:hint="Description"
+                app:boxStrokeColor="@android:color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                app:startIconDrawable="@drawable/desc"
+                app:startIconTint="@android:color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        <com.google.android.material.textfield.TextInputLayout-->
+            <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="10dp"-->
+            <!--            android:hint="Category"-->
+            <!--            android:id="@+id/product_category"-->
+            <!--            app:boxStrokeColor="@android:color/black"-->
+            <!--            app:boxStrokeWidthFocused="2dp"-->
+            <!--            app:hintTextColor="@android:color/black"-->
+            <!--            app:endIconMode="clear_text"-->
+            <!--            android:textColorHint="@android:color/black"-->
+            <!--            app:startIconDrawable="@drawable/categories"-->
+            <!--            app:endIconDrawable="@drawable/down"-->
+            <!--            app:endIconTint="@android:color/black"-->
+            <!--            app:startIconTint="@android:color/black">-->
+
+            <!--            <com.google.android.material.textfield.TextInputEditText-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textCursorDrawable="@null" />-->
+
+            <!--        </com.google.android.material.textfield.TextInputLayout>-->
+            <TextView
+                android:id="@+id/product_category"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Category"
+                android:drawableStart="@drawable/categories"
+                android:padding="10dp"
+                android:textColorHint="@color/black"
+                android:drawableEnd="@drawable/down"
+                android:background="@drawable/cards"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/addproducts"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonslayout"
+                android:text="AddBeat"
+                android:textColor="@android:color/white" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
